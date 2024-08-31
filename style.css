@@ -61,7 +61,12 @@ margin-top: 5rem;
     padding: 1rem;
     border-radius: 1rem;
 }
-.compr{ height: 90px;
-        width: 10%;
+.compr{ height: 130px;
+        width: 11%;
         background-color: #ffefd5;
-         color: black;}
+         color: black;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

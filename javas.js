@@ -9,7 +9,7 @@ const comprc = document.getElementById("compr")
 const gencompchoice =()=>{
     const options =["rock","paper", "scissor"] ;
    const randomINDX= Math.floor(Math.random() * 3);
-   comprc.innerHTML =`computer choice is  ${options[randomINDX]}`;
+   comprc.innerHTML =`Computer choice is  ${options[randomINDX]}`;
    return options[randomINDX];
 }
 const drawgame = ()=>{
@@ -19,17 +19,19 @@ const drawgame = ()=>{
 }
 const showwinner =(userwin,userchoice,compchoice)=>{
     if(userwin){
-        msg.innerText= "Bhai aag lga di" ;
+        msg.innerText= "Bhai jann aag lga di " ;
         msg.style.backgroundColor ="green";
+        comprc.style.backgroundColor ="#ffefd5";
         userscore++;
         userscorep.innerHTML = userscore;
     }
     else{ console.log ("you loose");
         compscore++;
         compscorep.innerHTML = compscore;
-        msg.innerText= "Teri to kismat hi kharab hai";
+        msg.innerText= "kismat hi kharab hai ";
         msg.style.backgroundColor = "red";
-        msg.style.color="white";
+        comprc.style.backgroundColor ="#ffefd5";
+        msg.style.color="black";
     }
 }
 
